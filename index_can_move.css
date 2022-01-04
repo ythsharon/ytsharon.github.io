@@ -1,0 +1,231 @@
+/*
+$color-red: #AE1100;
+$color-bg: #EBECF0;
+$color-bg-dark: #AEB1BC;;
+$color-shadow: #BABECC;
+$color-white: #FFF;
+$color-content: #61677C;
+*/
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #EBECF0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Trebuchet MS;
+}
+
+.page{
+    flex-direction: column;
+    width: 100vw;
+}
+
+
+/*Nav Style*/
+
+.nav-container{
+    
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul{
+    float: right;
+    margin-right: 10vw;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 5vh;
+}
+
+nav a{
+    
+    color: #61677C;
+}
+
+.nav-right a{
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #FFF;
+    font-weight: bold;
+    /*box-shadow: -5px -5px 15px #FFF,  5px 5px 15px #BABECC;*/
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-right a:hover{
+    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+   
+}
+
+.nav-right a:active{
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+   
+}
+
+.nav-left a{
+    float: left;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 2vh;
+    margin-left: 10vw;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #FFF
+}
+
+/*Content Style*/
+
+.container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.content-container{
+    min-height: 100%;
+    min-width: 100%;
+
+    position: relative;
+}
+
+.container .card{
+    /*position: relative;*/
+    /*distance between myworks*/
+    margin-bottom: -150px;
+    cursor: default;
+}
+
+.container .card .face{
+    width: 500px;
+    height: 250px;
+    transition: 1s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #EBECF0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translate(500px,100px);
+}
+
+.container .card:hover .face.face1{
+    background: #AEB1BC;
+    transform: translate(250px,100px);
+    
+    transition: all 0.5s ease-in-out;
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 0;
+}
+
+.container .card .face.face1 .content img{
+    margin: 10px 0 0;
+    max-width: 100px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 20px;
+    color: #61677C;
+    text-shadow: 1px 1px #FFF/*, -1px -1px #444*/;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    /*position: relative;*/
+    background: #EBECF0;
+    box-shadow: -5px -5px 20px #FFF,  5px 5px 20px #BABECC;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    /*box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);*/
+    transform: translate(500px,-150px);
+}
+
+.container .card:hover .face.face2{
+    transform: translate(750px,-150px);
+}
+
+.container .card .face.face2 .content p{
+    color:#61677C;
+    text-shadow: 1px 1px 1px #FFF;
+    margin: 0px;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a{
+    color:#61677C;
+    text-shadow: 1px 1px 1px #FFF;
+    font-weight: bold;
+    box-shadow: -5px -5px 15px #FFF,  5px 5px 15px #BABECC;
+    transition: all 0.2s ease-in-out;
+ 
+    margin: 50px 0 0;
+    float: left;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container .card .face.face2 .content a:hover{
+    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+   
+}
+
+.container .card .face.face2 .content a:active{
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+   
+}
+
+
+/*Footer*/
+.footer{
+    position: relative;
+
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    bottom: 0px;
+}
+
+.copyright {
+  width: 100%;
+}
+
